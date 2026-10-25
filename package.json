@@ -1,0 +1,30 @@
+{
+  "name": "red-busqueda-rd",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Red de Búsqueda RD: cruce de denuncias de personas desaparecidas con registros de personas sin identificar, con capas operativas 911. Demo con datos ficticios.",
+  "license": "AGPL-3.0-only",
+  "packageManager": "pnpm@12.11.2",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "turbo run dev --filter=@rb/web",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "seed": "pnpm --filter @rb/seed run generate",
+    "db:start": "supabase start",
+    "db:reset": "supabase db reset",
+    "db:types": "supabase gen types typescript --local > packages/domain/src/database.types.ts",
+    "check": "pnpm lint && pnpm typecheck && pnpm test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "supabase": "2.120.0",
+    "turbo": "2.11.7",
+    "typescript": "6.0.3"
+  }
+}

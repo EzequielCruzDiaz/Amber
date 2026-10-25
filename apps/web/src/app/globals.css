@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+/* Tokens: los mismos colores de estado que la demo publicada. */
+@theme {
+  --color-bg: #e9eef3;
+  --color-surface: #ffffff;
+  --color-ink: #15202c;
+  --color-muted: #5a6879;
+  --color-line: #d2dae3;
+  --color-accent: #1d5ca6;
+  --color-st-busqueda: #c97f06;
+  --color-st-verificacion: #bd2f78;
+  --color-st-vivo: #2b8a57;
+  --color-st-fallecido: #6c6f87;
+  --color-rec-hospital: #1f7fb8;
+  --color-rec-detencion: #8a5a12;
+  --color-rec-forense: #4d4f63;
+  --color-alerta: #e0532a;
+  --font-sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0e141b;
+    --color-surface: #161f29;
+    --color-ink: #e3e9ef;
+    --color-muted: #93a2b3;
+    --color-line: #2a3645;
+    --color-accent: #6ea8ea;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
