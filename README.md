@@ -59,9 +59,3 @@ El CI corre además `pnpm audit`, el build de producción y las migraciones con 
 - [Modelos de negocio](docs/NEGOCIO.md)
 - [Hoja de ruta](docs/ROADMAP.md)
 - [Decisiones de arquitectura (ADR)](docs/adr/)
-
-## Licencia
-
-AGPL-3.0: cualquiera puede usar, estudiar y mejorar el código, y quien lo ofrezca como servicio debe publicar sus cambios. Añade el texto completo como `LICENSE` al crear el repo en GitHub (Add file → Create new file → `LICENSE` → Choose a license template).
-
-Límites provinciales: [geoBoundaries](https://www.geoboundaries.org/) (CC BY 4.0).
